@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/1-styles.css">
+        <link rel="stylesheet" href="assets/css/2-profile.css">
+        <link rel="stylesheet" href="assets/css/3-filters-tab.css">
+        <link rel="stylesheet" href="assets/css/4-footer.css">
+        <link rel="stylesheet" href="assets/css/5-responsive.css">
+
+        <title>jhony Souza Portfolio</title>
+    </head>
+    <body>
+        <!--=============== HEADER PROFILE ===============-->
+        <header class="profile container">
+					<!-- Theme button -->
+					<i class="ri-moon-line change-theme" id="theme-button"></i>
+
+					<!-- Profile data -->
+            <div class="profile_container grid">
+                <div class="profile_data">
+                    <div class="profile_border">
+                        <div class="profile_perfil">
+                            <img src="assets/img/perfil.png" alt="perfil image">
+                        </div>
+                    </div>
+                    <h2 class="profile_name">Jhony Souza</h2>
+                    <h3 class="profile_profession">Web developer</h3>
+
+                    <ul class="profile_social">
+                        <a href="https://www.instagram.com/el.jhony.oficial/" target="_blank" class="profile_social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://linkedin.com/" target="_blank" class="profile_social-link">
+                            <i class="ri-linkedin-line"></i>
+                        </a>
+                        <a href="https://github.com/WarDog1000" target="_blank" class="profile_social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </ul>
+                </div>
+                <div class="profile_info grid">
+                    <div class="profile_info-group">
+                        <h3 class="profile_info-number">1</h3>
+                        <p class="profile_info-description">Years of <br> work</p>
+                    </div>
+                    <div class="profile_info-group">
+                        <h3 class="profile_info-number">1</h3>
+                        <p class="profile_info-description">Complete <br> projects</p>
+                    </div>
+                    <div class="profile_info-group">
+                        <h3 class="profile_info-number">1</h3>
+                        <p class="profile_info-description">Satisfied <br> customers</p>
+                    </div>
+                </div>
+                <div class="profile_buttons">
+                    <!-- Insert your CV -->
+                    <a download='' href="assets/pdf/Gianell-Cv.pdf" class="button">Download CV <i class='ri-download-line'></i></i></a>
+
+                    <div class="profile_buttons-small">
+                        <a href="https://api.whatsapp.com/send?phone=543757501633&text=Hello, let's go to work" class="button button_small button_gray" target="_blank">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                        <a href="https://m.me/jhon.souza.7547" class="button button_small button_gray" target="_blank">
+                            <i class="ri-messenger-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="filters container">
+                <!--=============== FILTERS TABS data-target ===============-->
+								
+								<!-- data-target -->
+                <ul class="filters_content">
+                    <button class="filters_button filter-tab-active" data-target="#projects">
+                        projects
+                    </button>
+                    <button class="filters_button" data-target="#skills">
+                        Skills
+                    </button>
+                </ul>
+
+								<!-- data-content -->
+                <div class="filters_sections">
+                    <!--=============== PROJECTS ===============-->
+                    <div class="projects_content grid filters_active" data-content id="projects">
+                        <article class="projects_card">
+                            <img src="assets/img/project1.png" alt="" class="projects_img">
+
+                            <div class="projects_modal">
+                                <div>
+                                    <span class="projects_subtitle">Web</span>
+                                    <h3 class="projects_title">Cristmas Landing Page</h3>
+                                    <a href="https://responsive-cristmas-website.netlify.app/" target="_blank" class="projects_button button button_small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects_card">
+                            <img src="assets/img/project2.png" alt="" class="projects_img">
+
+                            <div class="projects_modal">
+                                <div>
+                                    <span class="projects_subtitle">Web</span>
+                                    <h3 class="projects_title">PortFolio Website</h3>
+                                    <a href="https://responsive-minimalist-portfolio.netlify.app/" target="_blank" class="projects_button button button_small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects_card">
+                            <img src="assets/img/project3.jpg" alt="" class="projects_img">
+
+                            <div class="projects_modal">
+                                <div>
+                                    <span class="projects_subtitle">Movil</span>
+                                    <h3 class="projects_title">Travel App</h3>
+                                    <a href="#" class="projects_button button button_small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects_card">
+                            <img src="assets/img/project4.jpg" alt="" class="projects_img">
+
+                            <div class="projects_modal">
+                                <div>
+                                    <span class="projects_subtitle">Design</span>
+                                    <h3 class="projects_title">Music App Design</h3>
+                                    <a href="#" class="projects_button button button_small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects_card">
+                            <img src="assets/img/project5.jpg" alt="" class="projects_img">
+
+                            <div class="projects_modal">
+                                <div>
+                                    <span class="projects_subtitle">Backend</span>
+                                    <h3 class="projects_title">JHotel App</h3>
+                                    <a href="#" class="projects_button button button_small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!--=============== SKILLS ===============-->
+                    <div class="skills_content grid" data-content id="skills">
+                        <div class="skills_area">
+                            <h3 class="skills_title">Fronted Developer</h3>
+                            
+                            <div class="skills_box">
+                                <div class="skills_group">
+                                    <div class="skills_data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills_name">HTML</h3>
+                                            <span class="skils_level">Advanced</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills_data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills_name">CSS</h3>
+                                            <span class="skils_level">Advanced</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills_data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills_name">JavaScript</h3>
+                                            <span class="skils_level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skills_group">
+                                    <div class="skills_data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills_name">React</h3>
+                                            <span class="skils_level">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills_data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills_name">Bootstrap</h3>
+                                            <span class="skils_level">Basic</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills_data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills_name">Git</h3>
+                                            <span class="skils_level">Advanced</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+												<div class="skills_area">
+													<h3 class="skills_title">Backend Developer</h3>
+													
+													<div class="skills_box">
+															<div class="skills_group">
+																	<div class="skills_data">
+																			<i class="ri-checkbox-circle-line"></i>
+																			<div>
+																					<h3 class="skills_name">PHP</h3>
+																					<span class="skils_level">Basic</span>
+																			</div>
+																	</div>
+
+																	<div class="skills_data">
+																			<i class="ri-checkbox-circle-line"></i>
+																			<div>
+																					<h3 class="skills_name">MySQL</h3>
+																					<span class="skils_level">Intermediate</span>
+																			</div>
+																	</div>
+
+																	<div class="skills_data">
+																			<i class="ri-checkbox-circle-line"></i>
+																			<div>
+																					<h3 class="skills_name">Java</h3>
+																					<span class="skils_level">Intermediate</span>
+																			</div>
+																	</div>
+															</div>
+
+															<div class="skills_group">
+																	<div class="skills_data">
+																			<i class="ri-checkbox-circle-line"></i>
+																			<div>
+																					<h3 class="skills_name">Pyton</h3>
+																					<span class="skils_level">Basic</span>
+																			</div>
+																	</div>
+
+																	<div class="skills_data">
+																			<i class="ri-checkbox-circle-line"></i>
+																			<div>
+																					<h3 class="skills_name">Node Js</h3>
+																					<span class="skils_level">Intermediate</span>
+																			</div>
+																	</div>
+															</div>
+													</div>
+											</div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+					<span class="footer_copy">
+						&#169; Jhony Souza 2023, All rigths reserved.
+					</span>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
