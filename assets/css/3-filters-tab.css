@@ -113,6 +113,15 @@
   color: var(--first-color);
 }
 
+/* not checked skill */
+.skills_content .skills_box .skills_group .skills_data i.no-checked{
+  color: red;
+}
+/* learning */
+.skills_content .skills_box .skills_group .skills_data i.learning{
+  color: #adff2f;
+}
+
 .skills_content .skills_box .skills_group .skills_data .skills_name {
   font-size: var(--normal-font-size);
   font-weight: 500;
