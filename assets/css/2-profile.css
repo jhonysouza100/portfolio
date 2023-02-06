@@ -117,8 +117,12 @@
 }
 
 .button_small {
-  padding: 0.75rem;
+  padding: 0.85rem;
   box-shadow: none;
+}
+
+.button_small i {
+ font-size: 1.25rem;
 }
 
 .button_gray {
