@@ -2,17 +2,21 @@
     /* background-color: #ffcc33; */
     border-radius: 25px;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 15px;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    cursor: pointer;
+    z-index: 10;
+    color: var(--title-color);
   }
   
   .floating-card i {
-    font-size: 35px;
-    /* color: var(--primary-color); */
+    font-size: 1.9rem;
+  }
+  .floating-card:hover {
+    color: var(--first-color-alt);
   }
 
   @keyframes bounce {
