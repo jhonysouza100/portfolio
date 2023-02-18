@@ -57,6 +57,7 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: 0.3s; /* For animation dark mode */
+  user-select: none;
 }
 
 h1,
@@ -80,7 +81,7 @@ img {
 }
 
 /*=============== THEME ===============*/
-.change-theme {
+.change_theme {
   position: absolute;
   top: 1.5rem;
   right: 0;
@@ -90,7 +91,7 @@ img {
   transition: 0.3;
 }
 
-.change-theme:hover {
+.change_theme:hover {
   color: var(--first-color);
 }
 

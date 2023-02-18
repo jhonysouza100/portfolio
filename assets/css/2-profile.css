@@ -121,10 +121,6 @@
   box-shadow: none;
 }
 
-.button_small i {
- font-size: 1.25rem;
-}
-
 .button_gray {
   background-color: var(--text-color-lighten);
   color: var(--title-color);
