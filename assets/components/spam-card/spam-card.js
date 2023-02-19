@@ -54,7 +54,7 @@ function spamOut() {
         }
       }, 1500);
     }
-  }, 2000);
+  }, 60000);
 }
 
 let synth = window.speechSynthesis; // controla la sintesis

@@ -47,7 +47,7 @@ if (!isTouch) {
     customCursor.classList.add(isHidden);
   };
 
-  const contain = [spamBox]; // indico los elementos que tendran un custom_cursor
+  const contain = [spamContent]; // indico los elementos que tendran un custom_cursor
   let exept = '.exit_button'; // indico donde no quiero que aparesca el custom_cursor
   const asignLink = (arg) => { // agrego un viculo que conectara el custom_cursor al los elemntos donde se quiere mostrar
    arg.forEach((el) => {
