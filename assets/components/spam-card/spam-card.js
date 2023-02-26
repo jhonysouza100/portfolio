@@ -142,7 +142,7 @@ speech.onend = function () {
 function getVoicesDisponinles() {
   // obtengo una lista de las voces disponibles
   let voices = synth.getVoices();
-  let idioma = "Google español";
+  let idioma = "Microsoft Raul - Spanish (Mexico)";
   // cambiar el pitch and rate
   speech.pitch = 1; // agudo de voz
   speech.rate = 1.1; // velocidad de voz
