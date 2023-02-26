@@ -144,8 +144,8 @@ function getVoicesDisponinles() {
   let voices = synth.getVoices();
   let idioma = "Microsoft Raul - Spanish (Mexico)";
   // cambiar el pitch and rate
-  speech.pitch = 1; // agudo de voz
-  speech.rate = 1.1; // velocidad de voz
+  speech.pitch = 0.3; // agudo de voz
+  speech.rate = 1.3; // velocidad de voz
   for (let i = 0; i < voices.length; i++) {
     console.log(voices[i].name);
     if (voices[i].name === idioma) {
