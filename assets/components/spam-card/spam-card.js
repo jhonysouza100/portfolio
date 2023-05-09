@@ -58,7 +58,7 @@ function spamOut() {
 }
 
 let synth = window.speechSynthesis; // controla la sintesis
-let speech = new SpeechSynthesisUtterance(`Hola!${spamText.innerText} desde ya, ${authorName.innerText}`); // sintetiza el texto a voz
+let speech = new SpeechSynthesisUtterance(`Hola! y ${spamText.innerText} desde ya, ${authorName.innerText}`); // sintetiza el texto a voz
 let speaking = false;
 let paused = false;
 
