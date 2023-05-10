@@ -73,3 +73,20 @@ sr.reveal(`.profile_buttons`, { delay: 800 });
 // Filters
 sr.reveal(`.filters_content`, { delay: 900 });
 sr.reveal(`.filters`, { delay: 1000 });
+
+/*=============== DOWNLOAD RESUME ===============*/
+const downloadBtn = document.querySelector(".button");
+
+downloadBtn.addEventListener("click", () => {
+  const theme = localStorage.getItem('selected-theme');
+  let downloadLink;
+  
+  if (theme === 'dark') {
+    downloadLink = 'assets/pdf/jhon-souza-resume-dark.pdf';
+  } else {
+    downloadLink = 'assets/pdf/jhon-souza-resume-light.pdf';
+  }
+  
+  downloadBtn.download = 'jhon-souza-resume.pdf';
+  downloadBtn.href = downloadLink;
+});
