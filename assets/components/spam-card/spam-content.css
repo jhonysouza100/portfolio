@@ -61,7 +61,8 @@
 
 .content_box .content .spam_text {
   text-align: center;
-  word-break: break-all;
+  /* word-break: break-all; */
+  white-space: wrap;
 }
 
 .content_box .content .author {
