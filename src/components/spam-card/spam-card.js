@@ -58,7 +58,7 @@ function spamOut() {
 }
 
 let synth = window.speechSynthesis; // controla la sintesis
-let speech = new SpeechSynthesisUtterance(`Hola! y ${spamText.innerText} desde ya, ${authorName.innerText}`); // sintetiza el texto a voz
+let speech = new SpeechSynthesisUtterance(`HI!, ${spamText.innerText}, from already ${authorName.innerText}`); // sintetiza el texto a voz
 let speaking = false;
 let paused = false;
 
@@ -142,10 +142,10 @@ speech.onend = function () {
 function getVoicesDisponinles() {
   // obtengo una lista de las voces disponibles
   let voices = synth.getVoices();
-  let idioma = "Microsoft Raul - Spanish (Mexico)";
+  let idioma = "Google US English";
   // cambiar el pitch and rate
-  speech.pitch = 0.3; // agudo de voz
-  speech.rate = 1.3; // velocidad de voz
+  speech.pitch = 0.4; // agudo de voz
+  speech.rate = 1.1; // velocidad de voz
   for (let i = 0; i < voices.length; i++) {
     console.log(voices[i].name);
     if (voices[i].name === idioma) {

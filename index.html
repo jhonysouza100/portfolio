@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <!DOCTYPE html>
   <html lang="en">
     <head>
       <!-- Google tag (gtag.js) -->
@@ -11,7 +10,6 @@
         gtag('js', new Date());
       
         gtag('config', 'G-CPKT2M0M37');
-        console.log(gtag())
       </script>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +17,7 @@
       <!--=============== FAVICON ===============-->
       <link
         rel="shortcut icon"
-        href="assets/img/favicon.png"
+        href="public/img/favicon.png"
         type="image/x-icon"
       />
 
@@ -30,15 +28,15 @@
       />
 
       <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/1-styles.css" />
-      <link rel="stylesheet" href="assets/css/rgb/RGB-effect.css" />
-      <link rel="stylesheet" href="assets/components/spam-card/spam-card.css" />
-      <link rel="stylesheet" href="assets/components/spam-card/spam-content.css" />
-      <link rel="stylesheet" href="assets/components/custom-cursor/custom-cursor.css" />
-      <link rel="stylesheet" href="assets/css/2-profile.css" />
-      <link rel="stylesheet" href="assets/css/3-filters-tab.css" />
-      <link rel="stylesheet" href="assets/css/4-footer.css" />
-      <link rel="stylesheet" href="assets/css/5-responsive.css" />
+      <link rel="stylesheet" href="./src/css/1-styles.css" />
+      <link rel="stylesheet" href="./src/css/rgb/RGB-effect.css" />
+      <link rel="stylesheet" href="./src/components/spam-card/spam-card.css" />
+      <link rel="stylesheet" href="./src/components/spam-card/spam-content.css" />
+      <link rel="stylesheet" href="./src/components/custom-cursor/custom-cursor.css" />
+      <link rel="stylesheet" href="./src/css/2-profile.css" />
+      <link rel="stylesheet" href="./src/css/3-filters-tab.css" />
+      <link rel="stylesheet" href="./src/css/4-footer.css" />
+      <link rel="stylesheet" href="./src/css/5-responsive.css" />
 
       <title>Jhony Souza Portfolio</title>
     </head>
@@ -51,18 +49,18 @@
       <!-- =============== Spam Container =============== -->
       <div class="spam_content">
         <div class="content_box is-link">
-          <header>Hola!</header>
+          <header>Hello!</header>
           <div class="content">
             <!-- <==== Text ====> -->
             <div class="text">
               <i class="ri-double-quotes-l"></i>
-              <div class="spam_text">Mucho gusto, mi nombre es Jhonatan. Soy Ingeniero de Sistemas y Desarrolador Web, actualmente estoy trabajando de manera freelance con empresas de mi localidad. Si estás buscando dar vida a una idea o una mano para algun proyecto, contáctame y podemos trabajar juntos.</div>
+              <div class="spam_text">Nice to meet you, my name is Jhonatan. I am a Systems Engineer and Web Developer, I am currently working freelance with companies in my area. If you are looking to bring an idea to life or a helping hand on a project, contact me and we can work together.</div>
               <i class="ri-double-quotes-r"></i>
             </div>
             <!-- <==== Author ====> -->
             <div class="author">
               <span>__</span>
-              <span class="author_name">Muchas gracias!</span>
+              <span class="author_name">thank you very much!</span>
             </div>
           </div>
 
@@ -98,7 +96,7 @@
           <div class="profile_data">
             <div class="profile_border">
               <div class="profile_perfil">
-                <img src="assets/img/perfil.png" alt="perfil image" />
+                <img src="public/img/perfil.png" alt="perfil image" />
               </div>
             </div>
             <h2 class="profile_name">Jhony Souza</h2>
@@ -141,7 +139,7 @@
             </div>
             <div class="profile_info-group">
               <h3 class="profile_info-number">3</h3>
-              <p class="profile_info-description">Projects<br /></p>
+              <p class="profile_info-description">Views<br /></p>
             </div>
           </div>
           <div class="profile_buttons">
@@ -190,18 +188,35 @@
             </button>
             <button class="filters_button" data-target="#skills">Skills</button>
           </ul>
-
+          
           <!-- data-content -->
           <div class="filters_sections">
             <!--=============== PROJECTS ===============-->
             <div
-              class="projects_content grid filters_active"
-              data-content
-              id="projects"
+            class="projects_content grid filters_active"
+            data-content
+            id="projects"
             >
               <article class="projects_card">
                 <img
-                  src="assets/img/project1.png"
+                  src="public/img/project3.png"
+                  alt=""
+                  class="projects_img"
+                />
+              
+                <div class="projects_modal">
+                  <div>
+                    <span class="projects_subtitle">Vanilla Js App</span>
+                    <h3 class="projects_title">Professional Resume</h3>
+                    <a href="https://miwebcv.netlify.app" class="projects_button button button_small">
+                      <i class="ri-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="projects_card">
+                <img
+                  src="public/img/project1.png"
                   alt=""
                   class="projects_img"
                 />
@@ -223,7 +238,7 @@
 
               <article class="projects_card">
                 <img
-                  src="assets/img/project2.png"
+                  src="public/img/project2.png"
                   alt=""
                   class="projects_img"
                 />
@@ -245,7 +260,7 @@
 
               <article class="projects_card">
                 <img
-                  src="assets/img/default-img.jpg"
+                  src="public/img/default-img.jpg"
                   alt=""
                   class="projects_img"
                 />
@@ -261,27 +276,10 @@
                 </div>
               </article>
 
-              <article class="projects_card">
-                <img
-                  src="assets/img/project3.png"
-                  alt=""
-                  class="projects_img"
-                />
-
-                <div class="projects_modal">
-                  <div>
-                    <span class="projects_subtitle">Progressive Web App</span>
-                    <h3 class="projects_title">Professional Resume</h3>
-                    <a href="https://miwebcv.netlify.app" class="projects_button button button_small">
-                      <i class="ri-link"></i>
-                    </a>
-                  </div>
-                </div>
-              </article>
 
               <article class="projects_card">
                 <img
-                  src="assets/img/default-img.jpg"
+                  src="public/img/default-img.jpg"
                   alt=""
                   class="projects_img"
                 />
@@ -427,18 +425,25 @@
           &#169; Jhony Souza 2023, all rigths reserved.
         </span>
       </footer>
+      <!--=============== GOOGLE ANALYTICS ===============-->
+      <script src="https://apis.google.com/js/api.js"></script>
+      <script src="./public/js/google/getAnalytics.js" type="module"></script>
 
       <!--=============== SPAM SCRIPT ===============-->
-      <script src="assets/components/spam-card/spam-card.js"></script>
+      <script src="src/components/spam-card/spam-card.js"></script>
 
       <!-- =============== CUSTOM CURSOR SCRIPT =============== -->
-      <script src="assets/components/custom-cursor/custom-cursor.js"></script>
+      <script src="src/components/custom-cursor/custom-cursor.js"></script>
 
       <!--=============== SCROLLREVEAL ===============-->
-      <script src="assets/js/scrollreveal.min.js"></script>
+      <script src="src/components/scrollreveal.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
+      <script src="src/components/main.js"></script>
+
+<!-- 
+      <div id="root"></div>
+      <script type="module" src="/src/main.jsx"></script> -->
     </body>
   </html>
 </html>

@@ -82,9 +82,9 @@ downloadBtn.addEventListener("click", () => {
   let downloadLink;
   
   if (theme === 'dark') {
-    downloadLink = 'assets/pdf/jhon-souza-resume-dark.pdf';
+    downloadLink = 'public/pdf/jhon-souza-resume-dark.pdf';
   } else {
-    downloadLink = 'assets/pdf/jhon-souza-resume-light.pdf';
+    downloadLink = 'public/pdf/jhon-souza-resume-light.pdf';
   }
   
   downloadBtn.download = 'jhon-souza-resume.pdf';
