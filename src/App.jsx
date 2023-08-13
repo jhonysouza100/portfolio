@@ -1,34 +1,58 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { useEffect, useState } from 'react';
+import './App.css';
+import getAccessToken from './components/google/getAccessToken';
+import getAnalyticsData from './components/google/getAnalyticsData';
+
+import credentials from './components/google/client.json';
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const { web } = credentials;
+  const { client_id, client_secret, redirect_uris } = web;
+  const [token, setToken] = useState(null);
+  const [analyticsData, setAnalyticsData] = useState(null);
+
+  const handleLoginClick = () => {
+    const authUrl = `https://accounts.google.com/o/oauth2/auth?client_id=${client_id}&redirect_uri=${redirect_uris}&response_type=code&scope=email+profile`;
+
+    // Redirige al usuario a la página de autorización de Google
+    window.location.href = authUrl;
+  };
+
+  useEffect(() => {
+    const fetchToken = async () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const authorizationCode = urlParams.get('code');
+
+      if (authorizationCode) {
+        const accessToken = await getAccessToken(authorizationCode);
+        setToken(accessToken);
+
+        // Ahora que tenemos el token de acceso, obtenemos los datos de Google Analytics
+        const analyticsData = await getAnalyticsData(accessToken);
+        setAnalyticsData(analyticsData);
+      }
+    };
+
+    fetchToken();
+  }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="App">
+      <header className="App-header">
+        {!token ? (
+          <button onClick={handleLoginClick}>Iniciar sesión con Google</button>
+        ) : (
+          <>
+            <p>Token de acceso: {token}</p>
+            {analyticsData && (
+              <p>Resultados de Google Analytics: {JSON.stringify(analyticsData)}</p>
+            )}
+          </>
+        )}
+      </header>
+    </div>
+  );
 }
 
-export default App
+export default App;
