@@ -1,4 +1,4 @@
-import credentials from './client.json';
+import credentials from './clientData.json';
 
 const getAccessToken = async (authorizationCode) => {
   const { web } = credentials;
