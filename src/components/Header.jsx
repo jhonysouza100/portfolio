@@ -34,7 +34,7 @@ export default function Header() {
 
             <div className="profile_border">
               <div className="profile_perfil">
-                <img src="./../../public/img/perfil.png" alt="perfil image" />
+                <img src="/img/perfil.png" alt="perfil image" />
               </div>
             </div>
             <h2 className="profile_name">Jhony Souza</h2>

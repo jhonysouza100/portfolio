@@ -26,7 +26,7 @@ export default function Main() {
         {/*=============== PROJECTS ===============*/}
         <div className={`projects_content grid ${activeTab === "#projects" ? "filters_active" : ""}`} id="projects" data-content="#projects">
           <article className="projects_card">
-            <img src="./../../public/img/project3.png" alt="" className="projects_img" />
+            <img src="/img/project3.png" alt="" className="projects_img" />
             <div className="projects_modal">
               <div>
                 <span className="projects_subtitle">Vanilla Js App</span>
@@ -41,7 +41,7 @@ export default function Main() {
             </div>
           </article>
           <article className="projects_card">
-            <img src="./../../public/img/project1.png" alt="" className="projects_img" />
+            <img src="/img/project1.png" alt="" className="projects_img" />
             <div className="projects_modal">
               <div>
                 <span className="projects_subtitle">Web</span>
@@ -57,7 +57,7 @@ export default function Main() {
             </div>
           </article>
           <article className="projects_card">
-            <img src="./../../public/img/project2.png" alt="" className="projects_img" />
+            <img src="/img/project2.png" alt="" className="projects_img" />
             <div className="projects_modal">
               <div>
                 <span className="projects_subtitle">Responsive</span>
@@ -73,7 +73,7 @@ export default function Main() {
             </div>
           </article>
           <article className="projects_card">
-            <img src="./../../public/img/default-img.jpg" alt="" className="projects_img" />
+            <img src="/img/default-img.jpg" alt="" className="projects_img" />
             <div className="projects_modal">
               <div>
                 <span className="projects_subtitle">React - Redux</span>
@@ -85,7 +85,7 @@ export default function Main() {
             </div>
           </article>
           <article className="projects_card">
-            <img src="./../../public/img/default-img.jpg" alt="" className="projects_img" />
+            <img src="/img/default-img.jpg" alt="" className="projects_img" />
             <div className="projects_modal">
               <div>
                 <span className="projects_subtitle">Backend</span>
