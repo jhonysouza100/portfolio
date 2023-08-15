@@ -7,11 +7,12 @@ export default function Header() {
     const selectedTheme = localStorage.getItem("selected-theme");
     const selectedIcon = localStorage.getItem("selected-icon");
 
-    // SI no hay un theme guardado en el localStorage, entonces se mantiene la configuracion por defecto
-    if(!selectedIcon && selectedTheme) return false
+    // SI hay un theme guardado en el localStorage, entonces se mantiene la configuracion por defecto
+    if(selectedIcon && selectedTheme) {
     // De lo contrario, se guardan en el state los datos del theme seleccionado
     setTheme(selectedTheme)
-    setIcon(selectedIcon)
+    setIcon((selectedIcon))
+    }
   }
   const toggleTheme = () => {
     const newTheme = theme === 'light-theme' ? 'dark-theme' : 'light-theme';
