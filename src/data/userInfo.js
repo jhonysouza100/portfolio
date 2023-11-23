@@ -8,6 +8,6 @@ export const userInfo = {
   messenger: "https://m.me/jhon.souza.7547",
   resume: "jhon-souza-resume",
   first: `Years of<br />work`,
-  second: `Certifications<br />`,
+  second: `Projects<br />`,
   third: `Views<br />`,
 };

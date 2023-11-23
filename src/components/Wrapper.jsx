@@ -9,7 +9,7 @@ import AppContext from '../context/index';
 function Wrapper() {
   const {theme} = useContext(AppContext); // hook para destructurar del contexto
   return (
-    <div className={`wrapper ${theme ? theme : ""}`}>
+    <div className={`wrapper ${theme && theme}`}>
       <SpamCursor />
       <SpamContent />
       <SpamCard />

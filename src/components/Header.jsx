@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useContext } from 'react';
 import AppContext from '../context/index';
 export default function Header() {
-  const {handleTheme, toggleTheme, icon, theme, user, views, getViews, years} = useContext(AppContext);
+  const {handleTheme, toggleTheme, icon, theme, user, views, getViews, getYears} = useContext(AppContext);
   const {name, profession, instagram, linkedin, github, first, second, third, whatsapp, messenger, resume} = user;
   useEffect(() => {
     handleTheme();
@@ -38,7 +38,7 @@ export default function Header() {
           </div>
           <div className="profile_info grid">
             <div className="profile_info-group">
-              <h3 className="profile_info-number">{years}</h3>
+              <h3 className="profile_info-number">{getYears}</h3>
               <p className="profile_info-description" dangerouslySetInnerHTML={{ __html: first }}></p>
             </div>
             <div className="profile_info-group">

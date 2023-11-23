@@ -63,7 +63,7 @@ const AppProvider = ({children}) => {
 
 
   // === YEARS ===
-  const [years, setYears] = useState(() => {
+  const [getYears, setYears] = useState(() => {
     // Obtener la fecha actual
     let fechaActual = new Date();
 
@@ -82,7 +82,7 @@ const AppProvider = ({children}) => {
   });
   
   // todos los valores del contexto
-  const data = {theme, icon, handleTheme, toggleTheme, user, views, getViews, years}
+  const data = {theme, icon, handleTheme, toggleTheme, user, views, getViews, getYears}
   // elemento contenedor del contexto, para compartir la data con susu componentes hijo
   return(<AppContext.Provider value={data}>{children}</AppContext.Provider>);
 }
