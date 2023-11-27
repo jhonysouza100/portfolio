@@ -34,34 +34,40 @@ const AppProvider = ({children}) => {
   const [user, setUser] = useState(userInfo);
 
   // === VIEWS ===
-  const [views, setViews] = useState(1);
-  const options = {
-    method: "PUT",
-    headers: {
-      "Content-Type": "application/json",
-      "mode": "no-cors"
-    },
-    body: {
-      "id": 1,
-      "count": 1
-    }
-  };
+  const [views, setViews] = useState('?');
+  
   const getViews = async () => {
+    // const url = import.meta.env.API_URL;
+    const url = "https://views-api-jhonysouza100.vercel.app";
     try {
-      const res = await fetch("https://views-ik9xt2fxq-jhonysouza100.vercel.app/api");
-      if (!res.ok) {
-        throw new Error(`HTTP error! Status: ${res.status}`);
-      }
+      // Obtener el número actual de vistas
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`Error HTTP! Estado: ${res.status}`);
       const data = await res.json();
-      console.log(data);
-      setViews(data.count);
+      const currentCount = data.count;
+  
+      // Actualizar el número de vistas (incrementar en 1)
+      const newCount = currentCount + 1;
+      const updateRes = await fetch(url, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ id: 1, count: newCount }),
+      });
+  
+      if (!updateRes.ok) throw new Error(`Error HTTP! Estado: ${updateRes.status}`);
+      
+      // console.log(updateRes);
+  
+      // Establecer las vistas actualizadas
+      setViews(newCount);
     } catch (error) {
-      console.error("Error fetching data:", error);
+      console.error("Error al obtener o actualizar las vistas:", error);
       setViews(404);
     }
   };
-
-
+  
   // === YEARS ===
   const [getYears, setYears] = useState(() => {
     // Obtener la fecha actual
