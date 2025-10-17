@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="/public/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+    <link rel="shortcut icon" href="/public/favicon.ico" />
+    
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css" rel="stylesheet">
+    <!--=============== Devicon ICONS ===============-->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Jhony Souza Portfolio</title>
+  </head>
+  <body>
+    <!--=============== HEADER PROFILE ===============-->
+    <header class="profile container">
+      <!-- Theme Button -->
+      <i class="ri-moon-line change-theme" title="Change theme" id="theme-button"></i>
+      <div class="profile_container grid">
+        <div class="profile_data">
+          <div class="profile_border">
+            <div class="profile_perfil">
+              <img src="/public/images/perfil.png" alt="profile image">
+            </div>
+          </div>
+          <h2 class="profile_name">Jhony Souza</h2>
+          <h3 class="profile_profession">Full Stack Web Developer</h3>
+
+          <ul class="profile_social">
+            <a href="https://www.linkedin.com/in/jhonatan-leon-souza-meza" target="_blank" title="go to my Linkedin profile" profile social media" class="profile_social-link">
+              <i class="ri-linkedin-line"></i>
+            </a>
+            <a href="https://github.com/jhonysouza100" target="_blank" title="go to my GitHub profile" profile social media" class="profile_social-link">
+              <i class="ri-github-line"></i>
+            </a>
+            </ul>
+        </div>
+
+        <!-- Profile Info -->
+        <div class="profile_info grid">
+          <div class="profile_info-group">
+            <h3 class="profile_info-number" id="years-count">+3</h3>
+            <p class="profile_info-description">
+              Years of <br> experience
+            </p>
+          </div>
+          <div class="profile_info-group">
+            <h3 class="profile_info-number" id="projects-count">3</h3>
+            <p class="profile_info-description">
+              Completed <br> projects
+            </p>
+          </div>
+          <div class="profile_info-group">
+            <h3 class="profile_info-number" id="skills-count">+10</h3>
+            <p class="profile_info-description">
+              Technologies <br> mastered
+            </p>
+          </div>
+        </div>
+
+        <div class="profile_buttons">
+          <!-- Insert your CV -->
+          <div class="outer">
+            <a href="/cv" class="button">
+              Overview CV
+              <i class="ri-arrow-right-up-line"></i>
+            </a>
+            <!-- from RGB-effect -->
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="profile_buttons-small">
+            <!-- Insert a real number plus country code -->
+            <a href="https://api.whatsapp.com/send?phone=543757501633&text=Hola%20estoy%20interesado%20en%20el%20desarrollo%20de%20un%20proyecto
+            " target="_blank" class="button button_small button_gray" aria-label="email" title="send me a message">
+              <i class="ri-whatsapp-line"></i>
+            </a>
+            <!-- Insert your brand name or profile -->
+            <a href="mailto:jhonatansouzameza100@gmail.com" target="_blank" class="button button_small button_gray" aria-label="whatsapp" title="send me an email">
+              <i class="ri-mail-send-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <section class="filters container">
+          <!--=============== FILTERS TABS ===============-->
+          <ul class="filters_content">
+            <button class="filters_button filter-tab-active" data-target="#projects">
+              Projects
+            </button>
+            <button class="filters_button" data-target="#skills">
+              Skills
+            </button>
+          </ul>
+
+          <div class="filters__sections">
+            <!--=============== PROJECTS ===============-->
+            <div class="projects_content grid filters_active" data-content id="projects">
+              <article class="projects_card">
+                <img src="/public/images/project1.jpg" alt="project image" class="projects_img">
+
+                <div class="projects_modal">
+                  <div>
+                    <span class="projects_subtitle">Landing Page</span>
+                    <h3 class="projects_title">Urban Hotel Express</h3>
+                    <div class="projects_buttons">
+                      <a title="www.iguazuurbanhotel.com" href="https://www.iguazuurbanhotel.com" class="projects_button button button_small" target="_blank">
+                        <i class="ri-link"></i>
+                      </a>
+                      <span class="project_stack">
+                        <i title="HTML5" class="ri-html5-line"></i>
+                        <i title="CSS3" class="ri-css3-line"></i>
+                        <i title="JavaScript" class="ri-javascript-line"></i>
+                        <i title="JQuery" class="devicon-jquery-plain-wordmark"></i>
+                        <i title="Nginx" class="devicon-nginx-original"></i>
+                        <i title="Google Sheets" class="ri-file-excel-2-line"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="projects_card">
+                <img src="/public/images/project2.jpg" alt="project image" class="projects_img">
+
+                <div class="projects_modal">
+                  <div>
+                    <span class="projects_subtitle">E-commerce</span>
+                    <h3 class="projects_title">Importados Argentina</h3>
+                    <div class="projects_buttons">
+                      <a title="importadosargentina.com" href="https://importadosargentina.com" class="projects_button button button_small" target="_blank">
+                        <i class="ri-link"></i>
+                      </a>
+                      <span class="project_stack">
+                        <i title="Typescript" class="devicon-typescript-plain"></i>
+                        <i title="Reactjs" class="ri-reactjs-line"></i>
+                        <i title="Nextjs" class="ri-nextjs-line"></i>
+                        <i title="TailwindCss" class="devicon-tailwindcss-original"></i>
+                        <i title="Zustand" class="devicon-zustand-plain"></i>
+                        <i title="MySQL" class="devicon-mysql-original"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!--=============== SKILLS ===============-->
+            <div class="skills_content grid" data-content id="skills">
+
+              <!-- Frontend -->
+              <div class="skills_area">
+                <h3 class="skills_title">Frontend</h3>
+                <div class="skills_box">
+                  <div class="skills_group">
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">HTML</h3>
+                        <span class="skills_level">Advanced</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">CSS</h3>
+                        <span class="skills_level">Advanced</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">Tailwind CSS</h3>
+                        <span class="skills_level">CSS Framework</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">TypeScript</h3>
+                        <span class="skills_level">Typed Js</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="skills_group">
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">React</h3>
+                        <span class="skills_level">Advanced</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">Next.js</h3>
+                        <span class="skills_level">React Framework</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">Zustand</h3>
+                        <span class="skills_level">State Management</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">DOM</h3>
+                        <span class="skills_level">Vanilla JavaScript</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">JQuery</h3>
+                        <span class="skills_level">Js Framework</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Backend -->
+              <div class="skills_area">
+                <h3 class="skills_title">Backend</h3>
+                <div class="skills_box">
+                  <div class="skills_group">
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">Node.js</h3>
+                        <span class="skills_level">Advanced</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">Express.js</h3>
+                        <span class="skills_level">API Development</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">Nest.js</h3>
+                        <span class="skills_level">Node Framework</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">JSON</h3>
+                        <span class="skills_level">Js Object Notation</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">Socket.io</h3>
+                        <span class="skills_level">WebSockets</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">TypeORM</h3>
+                        <span class="skills_level">DB Interactions</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="skills_group">
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">JWT</h3>
+                        <span class="skills_level">Authentication</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">API REST</h3>
+                        <span class="skills_level">HTTP Protocol</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">Swagger</h3>
+                        <span class="skills_level">API Docs</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">MySQL</h3>
+                        <span class="skills_level">Relational DB</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">MongoDB</h3>
+                        <span class="skills_level">NoSQL Database</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">Redis</h3>
+                        <span class="skills_level">in-memory data cache</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DevOps -->
+              <div class="skills_area">
+                <h3 class="skills_title">DevOps</h3>
+                <div class="skills_box">
+                  <div class="skills_group">
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">Git</h3>
+                        <span class="skills_level">Version Control</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">Docker</h3>
+                        <span class="skills_level">Containerization</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">Nginx</h3>
+                        <span class="skills_level">Web Server</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="skills_group">
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">Linux</h3>
+                        <span class="skills_level">Server Admin</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">Bash</h3>
+                        <span class="skills_level">Comand Console</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">Jest</h3>
+                        <span class="skills_level">Testing</span>
+                      </div>
+                    </div>
+                  </div>
+                    
+                </div>
+              </div>
+
+              <!-- Third-Party Services -->
+              <div class="skills_area">
+                <h3 class="skills_title">Third-Party Services</h3>
+                <div class="skills_box">
+                  <div class="skills_group">
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">Google SEO</h3>
+                        <span class="skills_level">Search Console</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">Google OAuth</h3>
+                        <span class="skills_level">User Login</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">Google Sheets</h3>
+                        <span class="skills_level">Cloud-based Spreadsheet</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">Brevo</h3>
+                        <span class="skills_level">Email Services</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skills_group">
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">Digital Ocean</h3>
+                        <span class="skills_level">VPS Hosting</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">Cloudinary</h3>
+                        <span class="skills_level">Media Management</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">Mercadopago API</h3>
+                        <span class="skills_level">Payment Gateway</span>
+                      </div>
+                    </div>
+                    <div class="skills_data">
+                      <i class="ri-checkbox-circle-line"></i>
+                      <div>
+                        <h3 class="skills_name">AWS</h3>
+                        <span class="skills_level">Cloud Computing Platform</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+      <div class="footer_copy">
+        &#169; JhonySouza100 All Rights Reserved.
+      </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js" integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="script.js"></script>
+  </body>
+</html>
